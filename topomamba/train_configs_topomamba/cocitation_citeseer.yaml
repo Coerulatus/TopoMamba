@@ -1,0 +1,49 @@
+'method': 'grid'
+'metric':
+    'name': 'valid_acc'
+    'goal': 'maximize'
+'parameters':
+    'seed':
+        'values': [21]
+    'split':
+        'values': [0]
+    'data_type':
+        'values': ['cocitation']
+    'data_name':
+        'values': ['citeseer']
+    'data_dir':
+        'values': ['data/citeseer']
+    'sequencer':
+        'values': ['rank']#['rank_binned','only_x']#,'rank']
+    'keep_empty_ranks':
+        'values': [False]
+    'skip_connection':
+        'values': [True]
+    'backwards':
+        'values': [True]
+    'n_layers':
+        'values': [2]
+    'sequencer_limit':
+        'values': [10000]
+    'n_bins':
+        'values': [64]
+    'batch_size':
+        'values': ['full']
+    'n_epochs':
+        'values': [1000]
+    'd_hidden':
+        'values': [256]
+    'lr':
+        'values': [0.001]
+    'dropout':
+        'values': [0.5]
+    'gpu':
+        'values': [0]
+    'use_attention':
+        'values': [False]
+    'sequence_model':
+        'values': ['mamba','gru','lstm','s4','transformer']
+    'complex_dim':
+        'values': [3]
+    'patience':
+        'values': [50]

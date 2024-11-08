@@ -1,0 +1,53 @@
+'method': 'grid'
+'metric':
+    'name': 'valid_acc'
+    'goal': 'maximize'
+'parameters':
+    'seed':
+        'values': [21]
+    'split':
+        'values': [0]
+    'data_type':
+        'values': ['cornel']
+    'data_name':
+        'values': ['US-county-demos']
+    'year':
+        'values': [2012]
+    'task_variable':
+        'values': ['BirthRate'] # options: ['Election', 'MedianIncome', 'MigraRate', 'BirthRate', 'DeathRate', 'BachelorRate', 'UnemploymentRate']
+    'data_dir':
+        'values': ['data/uscountydemos']
+    'sequencer':
+        'values': ['rank']#['rank_binned','only_x']#,'rank']
+    'keep_empty_ranks':
+        'values': [False]
+    'skip_connection':
+        'values': [True]
+    'n_layers':
+        'values': [2]
+    'sequencer_limit':
+        'values': [10000]
+    'n_bins':
+        'values': [64]
+    'batch_size':
+        'values': [128]
+    'n_epochs':
+        'values': [50]
+    'd_hidden':
+        'values': [256]
+    'lr':
+        'values': [0.001]
+    'dropout':
+        'values': [0.5]
+    'gpu':
+        'values': [0]
+    'use_attention':
+        'values': [False]
+    'sequence_model':
+        'values': ['mamba','gru','lstm','s4','transformer']
+    'complex_dim':
+        'values': [3]
+    'patience':
+        'values': [5]
+    'task':
+        'values': ['regression']
