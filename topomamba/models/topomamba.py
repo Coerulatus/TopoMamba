@@ -5,7 +5,7 @@ import time
 import numpy as np
 import os
 
-from topomamba.modules.sequencers import SequencerRank, SequencerOnlyX, SequencerRankConcatenate, SequencerRankBinned
+from topomamba.modules.sequencers import SequencerRank, SequencerOnlyX
 from topomamba.evaluators.evaluator import Evaluator
 from topomamba.modules.mlp import MLP
 
